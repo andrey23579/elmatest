@@ -1,0 +1,9 @@
+c:\users\varankin\documents\visual studio 2013\Projects\calc\calc\bin\Debug\calc.dll
+c:\users\varankin\documents\visual studio 2013\Projects\calc\calc\bin\Debug\calc.pdb
+c:\users\varankin\documents\visual studio 2013\Projects\calc\calc\obj\Debug\calc.dll
+c:\users\varankin\documents\visual studio 2013\Projects\calc\calc\obj\Debug\calc.pdb
+C:\Users\Юлия\Documents\visual studio 2015\Projects\calc\calc\bin\Debug\calc.dll
+C:\Users\Юлия\Documents\visual studio 2015\Projects\calc\calc\bin\Debug\calc.pdb
+C:\Users\Юлия\Documents\visual studio 2015\Projects\calc\calc\obj\Debug\calc.csprojResolveAssemblyReference.cache
+C:\Users\Юлия\Documents\visual studio 2015\Projects\calc\calc\obj\Debug\calc.dll
+C:\Users\Юлия\Documents\visual studio 2015\Projects\calc\calc\obj\Debug\calc.pdb
