@@ -1,0 +1,7 @@
+c:\Users\varankin\documents\visual studio 2013\Projects\calc\calc.test\obj\Debug\calc.test.csprojResolveAssemblyReference.cache
+c:\Users\varankin\documents\visual studio 2013\Projects\calc\calc.test\bin\Debug\calc.test.dll
+c:\Users\varankin\documents\visual studio 2013\Projects\calc\calc.test\bin\Debug\calc.test.pdb
+c:\Users\varankin\documents\visual studio 2013\Projects\calc\calc.test\bin\Debug\calc.dll
+c:\Users\varankin\documents\visual studio 2013\Projects\calc\calc.test\bin\Debug\calc.pdb
+c:\Users\varankin\documents\visual studio 2013\Projects\calc\calc.test\obj\Debug\calc.test.dll
+c:\Users\varankin\documents\visual studio 2013\Projects\calc\calc.test\obj\Debug\calc.test.pdb
