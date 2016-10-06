@@ -12,9 +12,11 @@ namespace WebCalc.Controllers
 {
     public class CalcController : Controller
     {
-        private string queryString;
+       
 
-        public Helper  CalcHelper { get; set; }
+        // private string queryString;
+
+        //  public Helper  CalcHelper { get; set; }
         // GET: Calc
         public ActionResult Index(CalcModel data)
         {
@@ -34,21 +36,25 @@ namespace WebCalc.Controllers
 
             ViewData.Model = model;
 
-            return View(GetOperation());
+            return View();
         }
 
-        private object GetOperation()
-        {
-            throw new NotImplementedException();
+        public ActionResult History()
+       {  
+            return View(GetOperation());
         }
-        #region работа с бд
-        private void AddOperation(string oper)
+    /*   private object GetOperation()
+       {
+           throw new NotImplementedException();
+       }*/
+    #region работа с бд
+    private void AddOperation(string oper)
         {
             var connectionString = ConfigurationManager.ConnectionStrings["ElmaCon"].ConnectionString;
             using (SqlConnection connection = new SqlConnection(connectionString))
-            // connectionString))
+            
             {
-                var qerystring = string.Format("INSERT INTO [dbo].[History] ([Operation]) VALUES (N'{0}')", oper);
+                var queryString = string.Format("INSERT INTO [dbo].[History] ([Operation]) VALUES (N'{0}')", oper);
                 SqlCommand command = new SqlCommand(queryString, connection);
                 command.Connection.Open();
                 command.ExecuteNonQuery();
@@ -56,17 +62,17 @@ namespace WebCalc.Controllers
         }
         #endregion
 
-     /*   private IEnumerable<string> GetOperation(string oper)
+       private IEnumerable<string> GetOperation()
         {
-            var connectionString = ConfigurationManager.ConnectionStrings["tlmacon"].ConnectionString;
+            var connectionString = ConfigurationManager.ConnectionStrings["ElmaCon"].ConnectionString;
 
             var result = new List<string>();
 
             using (SqlConnection connection = new SqlConnection(connectionString))
-            // connectionString))
+           
             {
-                var qerystring = string.Format("SELECT [Operation]FROM [dbo].[History] ");
-                SqlCommand command = new SqlCommand(queryString, connection);
+                var querystring = string.Format("SELECT [Operation]FROM [dbo].[History] ");
+                SqlCommand command = new SqlCommand(querystring, connection);
                 command.Connection.Open();
                 var reader = command.ExecuteReader();
                 if (reader.HasRows)
@@ -80,12 +86,8 @@ namespace WebCalc.Controllers
                 
             }
             return result;
-        }*/
-
-        public ActionResult History()
-        {
-            return View(new List<string>() { "asdad", "asdass", "asdasdasdasdas" });
         }
+
         
     }
 }
