@@ -7,3 +7,8 @@ C:\Users\Юлия\Documents\visual studio 2015\Projects\calc\calc\bin\Debug\calc
 C:\Users\Юлия\Documents\visual studio 2015\Projects\calc\calc\obj\Debug\calc.csprojResolveAssemblyReference.cache
 C:\Users\Юлия\Documents\visual studio 2015\Projects\calc\calc\obj\Debug\calc.dll
 C:\Users\Юлия\Documents\visual studio 2015\Projects\calc\calc\obj\Debug\calc.pdb
+C:\Users\Юлия\Documents\Visual Studio 2015\Projects\elmatest\calc\bin\Debug\calc.dll
+C:\Users\Юлия\Documents\Visual Studio 2015\Projects\elmatest\calc\bin\Debug\calc.pdb
+C:\Users\Юлия\Documents\Visual Studio 2015\Projects\elmatest\calc\obj\Debug\calc.csprojResolveAssemblyReference.cache
+C:\Users\Юлия\Documents\Visual Studio 2015\Projects\elmatest\calc\obj\Debug\calc.dll
+C:\Users\Юлия\Documents\Visual Studio 2015\Projects\elmatest\calc\obj\Debug\calc.pdb

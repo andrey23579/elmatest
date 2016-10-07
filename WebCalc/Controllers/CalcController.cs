@@ -1,4 +1,6 @@
 ﻿using Calc;
+using Domain.Managers;
+using Domain.Models;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -12,11 +14,14 @@ namespace WebCalc.Controllers
 {
     public class CalcController : Controller
     {
-       
+        private IHistoryManager Manager { get; set; }
 
-        // private string queryString;
+        public CalcController()
+        {
+            Manager = new HistoryManager();
+        }
 
-        //  public Helper  CalcHelper { get; set; }
+
         // GET: Calc
         public ActionResult Index(CalcModel data)
         {
@@ -43,51 +48,26 @@ namespace WebCalc.Controllers
        {  
             return View(GetOperation());
         }
-    /*   private object GetOperation()
-       {
-           throw new NotImplementedException();
-       }*/
+  
     #region работа с бд
     private void AddOperation(string oper)
         {
-            var connectionString = ConfigurationManager.ConnectionStrings["ElmaCon"].ConnectionString;
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            
-            {
-                var queryString = string.Format("INSERT INTO [dbo].[History] ([Operation]) VALUES (N'{0}')", oper);
-                SqlCommand command = new SqlCommand(queryString, connection);
-                command.Connection.Open();
-                command.ExecuteNonQuery();
-            }
+           
+            var history = new Domain.Models.History();
+            history.CreationDate = DateTime.Now;
+            history.Operation = "SUM";
+            Manager.Add(history);
         }
         #endregion
 
-       private IEnumerable<string> GetOperation()
+
+        #region сохранение
+        private IEnumerable<History> GetOperation()
         {
-            var connectionString = ConfigurationManager.ConnectionStrings["ElmaCon"].ConnectionString;
-
-            var result = new List<string>();
-
-            using (SqlConnection connection = new SqlConnection(connectionString))
-           
-            {
-                var querystring = string.Format("SELECT [Operation]FROM [dbo].[History] ");
-                SqlCommand command = new SqlCommand(querystring, connection);
-                command.Connection.Open();
-                var reader = command.ExecuteReader();
-                if (reader.HasRows)
-                {
-                    while (reader.Read())
-                    {
-                        result.Add(reader.GetString(0));
-                    }
-                }
-                reader.Close();
-                
-            }
-            return result;
+            return Manager.List();
+          
         }
 
-        
+        #endregion
     }
 }

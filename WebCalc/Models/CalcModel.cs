@@ -19,9 +19,10 @@ namespace WebCalc.Models
         public int X { get; set; }
 
         [Required]
-        [Display(Name = "Результат")]
+        [Display(Name = "вторая переменная")]
         public int Y { get; set; }
 
+        [Display(Name = "Результат")]
         public double Result { get; set; }
     }
 }

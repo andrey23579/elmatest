@@ -101,3 +101,10 @@ C:\Users\Юлия\Documents\Visual Studio 2015\Projects\elmatest\WebCalc\bin\ru\
 C:\Users\Юлия\Documents\Visual Studio 2015\Projects\elmatest\WebCalc\obj\Debug\WebCalc.csprojResolveAssemblyReference.cache
 C:\Users\Юлия\Documents\Visual Studio 2015\Projects\elmatest\WebCalc\obj\Debug\WebCalc.dll
 C:\Users\Юлия\Documents\Visual Studio 2015\Projects\elmatest\WebCalc\obj\Debug\WebCalc.pdb
+C:\Users\Юлия\Documents\Visual Studio 2015\Projects\elmatest\WebCalc\bin\Domain.dll
+C:\Users\Юлия\Documents\Visual Studio 2015\Projects\elmatest\WebCalc\bin\NHibernate.dll
+C:\Users\Юлия\Documents\Visual Studio 2015\Projects\elmatest\WebCalc\bin\Iesi.Collections.dll
+C:\Users\Юлия\Documents\Visual Studio 2015\Projects\elmatest\WebCalc\bin\Domain.pdb
+C:\Users\Юлия\Documents\Visual Studio 2015\Projects\elmatest\WebCalc\bin\NHibernate.xml
+C:\Users\Юлия\Documents\Visual Studio 2015\Projects\elmatest\WebCalc\bin\Iesi.Collections.xml
+C:\Users\Юлия\Documents\Visual Studio 2015\Projects\elmatest\WebCalc\bin\hibernate.cfg.xml
