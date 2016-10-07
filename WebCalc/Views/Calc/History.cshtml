@@ -5,15 +5,18 @@
 
 <h2>History</h2>
 <table>
-    <tr><th>операция</th></tr>
 
 @foreach(var oper in Model)
 {
-    <tr>     
-        <td>@oper.X</td>
-        <td>@oper.Y</td>
+    <tr> <td>@oper.X</td>
         <td>@oper.Operation</td>
+        <td>@oper.Y</td>
+
+        <td>=</td>
+
         <td>@oper.Result</td>
+
+        <td>  _Data and Time</td>
         <td>@oper.CreationDate</td>
     </tr>
 }
